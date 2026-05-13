@@ -96,4 +96,20 @@ public class ProductController {
     }
 
 
+    @GetMapping("/names")
+    public ResponseEntity<APIResponse> getProductsGroupByname() {
+
+        Map<String, List<ProductResponseDTO>> products = productService.getProductsByTypes();
+        APIResponse<Map<String, List<ProductResponseDTO>>> responseDTO = APIResponse
+                .<Map<String, List<ProductResponseDTO>>>builder()
+                .status(SUCCESS)
+                .results(products)
+                .build();
+
+        log.info("ProductController::getProductsGroupByType by types  {}", ValueMapper.jsonAsString(responseDTO));
+
+        return new ResponseEntity<>(responseDTO, HttpStatus.OK);
+    }
+
+
 }
