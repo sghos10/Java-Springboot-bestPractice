@@ -96,7 +96,7 @@ public class ExperimentController {
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
-
+// Added new method in this class //
         @GetMapping("/names")
         public ResponseEntity<APIResponse> getProductsGroupByname() {
 
