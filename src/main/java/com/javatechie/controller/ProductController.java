@@ -26,7 +26,7 @@ public class ProductController {
     private ProductService productService;
 
 
-
+// I am adding this to do some experiment //
     @PostMapping
     public ResponseEntity<APIResponse> createNewProduct(@RequestBody @Valid ProductRequestDTO productRequestDTO) {
 
@@ -110,6 +110,8 @@ public class ProductController {
 
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
+
+   
 
 
 }
