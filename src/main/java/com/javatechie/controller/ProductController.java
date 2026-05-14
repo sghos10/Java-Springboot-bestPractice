@@ -26,7 +26,7 @@ public class ProductController {
     private ProductService productService;
 
 
-
+// I am adding this to do some experiment //
     @PostMapping
     public ResponseEntity<APIResponse> createNewProduct(@RequestBody @Valid ProductRequestDTO productRequestDTO) {
 
