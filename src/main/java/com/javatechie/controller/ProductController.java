@@ -91,7 +91,7 @@ public class ProductController {
                 .results(products)
                 .build();
 
-        log.info("ProductController::getProductsGroupByType by types  {}", ValueMapper.jsonAsString(responseDTO));
+        log.info("ProductController::getProductsGroupByType by types for proper logging {}", ValueMapper.jsonAsString(responseDTO));
 
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
