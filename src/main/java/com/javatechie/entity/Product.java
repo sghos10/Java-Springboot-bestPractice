@@ -13,6 +13,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Product {
 
+
+    // Dummy changes //
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
