@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ApplicationConfig {
 
+
+    // First changes//
     @Bean(name = "jasyptStringEncryptor")
     public StringEncryptor getSensitiveInfoEncryptor() {
         PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
